@@ -1,0 +1,53 @@
+.css-ciy9n4-MuiPaper-root-MuiAppBar-root{
+    /* background-color: aliceblue !important; */
+    /* color: black !important ; */
+}
+.css-jzk4qw-MuiPaper-root-MuiAppBar-root{
+    /* background-color: aliceblue !important; */
+    /* color: black !important ; */
+}
+.css-yfo96e{
+  background-color: white !important;
+}
+
+.navli{
+    display: inline;
+    float: right;
+    
+  }
+  
+  
+  .a{
+    
+    display: block;
+    padding: 0.6rem;
+    color: white;
+    /* background-color: #dddddd; */
+   
+  }
+  .a:hover,.active{
+   
+    border-bottom: 2px solid white;
+   
+
+    /* border: 2px solid #5a665d; */
+    
+  }
+  a:hover{
+    
+  color: black;
+
+  }
+  .active{
+    padding: .6rem;
+    font-weight: bolder;
+    color: black;
+    
+  }
+
+  @media only screen and (max-width: 1000px) 
+  {
+      .navul{
+          display: none;
+      }
+   }
