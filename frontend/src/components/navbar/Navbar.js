@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled, useTheme } from '@mui/material/styles';
+// import { makeStyles } from "@material-ui/core/styles";
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -28,10 +29,6 @@ import Info from '@mui/icons-material/Info';
 const drawerWidth = 240;
 
 
-
-
-
-
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
     flexGrow: 1,
@@ -50,6 +47,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     }),
   }),
 );
+
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
@@ -104,7 +102,7 @@ function Navbar() {
     <div>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <AppBar style={{ background: '#5a665d', color: 'white' }} position="fixed" open={open}>
+        <AppBar style={{ background: '#FFE4E1', color: 'black' }} position="fixed" open={open}>
           <Toolbar >
             <IconButton
               color="inherit"
@@ -115,21 +113,39 @@ function Navbar() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap component="div">
-              Gowellness Spa
+            <Typography style={{ fontFamily: 'Noto Serif, cursive' }} variant="h6" noWrap component="div">
+              Gowellness Salon & Spa
+             
             </Typography>
             <Typography style={{ marginLeft: 'auto' }} variant="p" noWrap component="div">
+             
+            <span class="topmob inline-flex sm:mr-auto sm:mt-0 mt-2 justify-center sm:justify-end" >
+               
+                <a class="text-gray-500">
+                  <svg fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+              
+                <a class="ml-3 text-gray-500">
+                  <svg fill="white" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+              
+              </span>
               <ul className="navul">
-                <li className='navli'> <a class="a" ><Link to='/services'>Services</Link></a></li>
-                <li className='navli'> <a class="a"><Link to='/contact'>Contact Us</Link></a></li>
-                <li className='navli'> <a class="a"><Link to='/about'>About Us</Link></a></li>
-                <li className='navli'> <a class="a"><Link to='/safety'>Safety Check</Link></a></li>
-                <li className='navli'> <a class="a"><Link to='/'>Home</Link></a></li>
+                <li className='navli'> <a style={{ fontFamily: 'Noto Serif, cursive' }} class="a"><Link to='/contact'>Contact Us</Link></a></li>
+                <li className='navli'> <a style={{ fontFamily: 'Noto Serif, cursive' }} class="a"><Link to='/safety'>Safety Check</Link></a></li>
+                <li className='navli'> <a style={{ fontFamily: 'Noto Serif, cursive' }} class="a"><Link to='/about'>About Us</Link></a></li>
+                <li className='navli'> <a style={{ fontFamily: 'Noto Serif, cursive' }} class="a" ><Link to='/services'>Services</Link></a></li>
+                <li className='navli'> <a style={{ fontFamily: 'Noto Serif, cursive' }} class="a"><Link to='/'>Home</Link></a></li>
               </ul>
             </Typography>
           </Toolbar>
         </AppBar>
-        <Drawer style={{backgroundColor:'#5a665d'}}
+        <Drawer style={{backgroundColor:'black' }}
           sx={{
             width: drawerWidth,
             flexShrink: 0,
@@ -139,12 +155,14 @@ function Navbar() {
             },
           }}
           variant="persistent"
+          
+  
           anchor="left"
           open={open}
         >
-          <button> <DrawerHeader onClick={handleDrawerClose} style={{ background: '#5a665d', color: 'black' }}>
-            <p style={{ marginLeft: 'auto' ,color:'white' }}> MENU</p>
-            <IconButton style={{color:'white'}} >
+          <button> <DrawerHeader onClick={handleDrawerClose} style={{ background: '#FFE4E1', color: 'black' }}>
+            <p style={{ fontFamily: 'Noto Serif, cursive', marginLeft: 'auto', color: 'white' }}> MENU</p>
+            <IconButton style={{ color: 'black' }} >
               {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
             </IconButton>
           </DrawerHeader> </button>
@@ -160,61 +178,61 @@ function Navbar() {
           ))}
         </List> */}
 
-          <List >
+          <List>
             <Link onClick={handleDrawerClose} to="/">
               <ListItem button>
                 <ListItemIcon>
                   <HomeIcon />
                 </ListItemIcon>
-                <ListItemText primary='HOME' />
+                <ListItemText primary='Home' />
               </ListItem>
             </Link>
           </List>
-          {/* <Divider /> */}
+          <Divider />
           <List >
             <Link onClick={handleDrawerClose} to='/services'>
               <ListItem button>
                 <ListItemIcon>
                   <CleaningServicesIcon />
                 </ListItemIcon>
-                <ListItemText primary='SERVICES' />
+                <ListItemText primary='Services' />
               </ListItem>
             </Link>
           </List>
-          {/* <Divider /> */}
+          <Divider />
           <List >
             <Link onClick={handleDrawerClose} to="/about">
               <ListItem button>
                 <ListItemIcon>
                   <InfoIcon />
                 </ListItemIcon>
-                <ListItemText primary='ABOUT US' />
+                <ListItemText primary='About Us' />
               </ListItem>
             </Link>
           </List>
-          {/* <Divider /> */}
+          <Divider />
           <List >
             <Link onClick={handleDrawerClose} to="/safety">
               <ListItem button>
                 <ListItemIcon>
                   <HealthAndSafetyIcon />
                 </ListItemIcon>
-                <ListItemText primary='SAFETY CHECK' />
+                <ListItemText primary='Safety Check' />
               </ListItem>
             </Link>
           </List>
-          {/* <Divider /> */}
+          <Divider />
           <List >
             <Link onClick={handleDrawerClose} to="/contact">
               <ListItem button>
                 <ListItemIcon>
                   <CallIcon />
                 </ListItemIcon>
-                <ListItemText primary='CONTACT US' />
+                <ListItemText primary='Contact Us' />
               </ListItem>
             </Link>
           </List>
-          {/* <Divider /> */}
+          <Divider />
 
         </Drawer>
         <Main open={open}>

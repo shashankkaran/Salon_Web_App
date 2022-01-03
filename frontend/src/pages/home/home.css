@@ -1,5 +1,7 @@
-
-
+.css-yfo96e{
+  padding: 0px !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Serif&display=swap');
 @media only screen  
 and (max-width: 1022px) 
   { 
@@ -10,9 +12,41 @@ and (max-width: 1022px)
         }
         .part2{
             position: relative;
-            bottom: 320px;
+            bottom: 300px;
         }
         
+
+
+}
+hr{
+  color: black;
+  /* padding-top: 0.3rem; */
+}
+p{
+font-family :'Noto Serif, cursive';
+}
+h2{
+  font-family: 'Merriweather', serif !important;
+}
+
+
+@media only screen and (min-width: 1000px) {
+h1,h2{
+  color: black !important;
+
+  font-size: 2rem !important;
+  line-height: 3rem !important;
+}
+h2{
+  font-family: 'Merriweather', serif !important;
+}
+
+.part2{
+  position: relative;
+  top:20px;
+}
+
+
 
 
 }
@@ -28,9 +62,14 @@ and (max-width: 1022px)
       }
       .part2{
           position: relative;
-          bottom:420px;
+          bottom:355px;
       }
-      
+      h1,h2{
+        color: black !important;
+        font-size: 1.5rem !important;
+        /* font-weight: 500 !important; */
+        /* line-height: 2rem !important; */
+      }
 
 
 }
