@@ -30,7 +30,7 @@ function Contact() {
           </div>
         </div>
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white  border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+          <button class="flex mx-auto text-white  border-0 py-2 px-8 focus:outline-none hover:bg-black bg-red-800 rounded text-lg">Send</button>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
        

@@ -10,7 +10,7 @@ export default function Services() {
               <h1 style={{ fontSize: '2rem' }} class="ml-auto mr-auto title-font font-medium text-xl mb-2 text-gray-900">Services</h1>
 
             </div>
-            <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <div class="lg:w-full md:w-full md:pr-10 center ml-auto mr-auto md:py-6">
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -73,10 +73,10 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <video autoPlay loop class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" >
+            {/* <video autoPlay loop class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" >
               <source src={v1} type='video/mp4' />
 
-            </video>
+            </video> */}
           </div>
         </div>
       </section>

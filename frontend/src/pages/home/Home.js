@@ -68,8 +68,8 @@ function Home() {
                                 </svg>
                             </div> */}
                             <div class="flex-grow">
-                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Reviva Salon and SPA<br />099020 01148</h2>
-                                <p class="leading-relaxed text-base">Quality services for women, men & kids and uncompromised hygiene is what we excel at</p>
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Reviva Salon and SPA<br />+91 99020 01148</h2>
+                                <p class="leading-relaxed text-base">Quality services and uncompromised hygiene is what we excel at</p>
                                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                                     <a href="https://www.facebook.com/Revive-Salon-And-Spa-110248058176328" class="text-gray-500">
                                         <svg fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ function Home() {
                                 </svg>
                             </div> */}
                             <div class="flex-grow">
-                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Esplendor spa and salon <br />080 4170 7679 </h2>
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Esplendor spa and salon <br />+91 99861 01846</h2>
                                 <p class="leading-relaxed text-base">Men are rich only as they give. He who gives great service gets great rewards.</p>
 
                                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
@@ -270,7 +270,7 @@ function Home() {
                                 </svg>
                             </div> */}
                             <div class="flex-grow">
-                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">R&K Spa<br />98860 44980</h2>
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">R&K Spa<br />+91 98860 44980</h2>
                                 <p class="leading-relaxed text-base">Happiness is a by-product of an effort to make someone else happy</p>
                               
                                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
